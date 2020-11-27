@@ -1,0 +1,277 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    width: 100%;
+    height: 20vh;
+    background-color: rgba(0, 0, 0, 0.897);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    border-radius: 0px 0px 30px 30px;
+}
+
+header img{
+    width: 20em;
+}
+
+#container_conteudo{
+    width: 100%;
+    height: 1000px;
+    background-color: green;
+    background-attachment: fixed;
+    background-image: url(img/fundo.jpg);
+    background-repeat: none;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+#header_herodex{
+    height: 100px;
+    width: 100%;
+    background-color: rgb(23, 18, 88);
+    border-radius: 50px 20px 0px 20px;
+}
+
+#container_herodex{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 5px;
+    margin-bottom: 50px;
+}
+
+#herodex_visualizacao{
+    width: 600px;
+    height: 700px;
+    background-color: #111111;
+    border-radius: 50px 20px 0px 50px;
+    border: solid 5px #16DEDD;
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    flex-direction:column;
+}
+
+#img_herodex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 500px;
+    border-radius: 20px;
+    margin-top: 40px;
+    background-color:#d62525;
+    flex-direction: column;
+}
+
+#img_herodex img{
+    margin-top: 10px;
+    width: 200px;
+    height: 300px;
+    border-radius: 20px;
+}
+
+#herodex_porta{
+    display:flex;
+    justify-content:space-around;
+    padding:10px;
+    flex-direction: column;
+    width: 550px;
+    height: 600px;
+    background-color: rgb(23, 18, 88);
+    border: solid 5px #16DEDD;
+    border-radius: 0px 50px 50px 0px;
+    align-items: center;
+    gap: 20px;
+}
+
+#buscar_heroi{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+#form{
+    display: flex;
+    height: 50px;
+    justify-content:center;
+    align-items:center;
+    gap: 10px;
+}
+
+#buscar_nome_heroi{
+    height:30px;
+    padding:10px;
+    border-radius: 10px 5px 10px 5px;
+}
+
+#buscar_id_heroi{
+    height:30px;
+    width:60px;
+    text-align: center;
+    padding:10px;
+    border-radius: 10px 5px 10px 5px;
+}
+
+#infos{
+    background-color: #111111;
+    width: 100%;
+    height:90%;
+    display: flex;
+    flex-direction: column;
+    justify-content:top;
+    align-items:center;
+    gap: 20px;
+    padding:10px;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 20px;
+}
+
+#btn_buscar{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+
+}
+
+#tela_infos{
+    display: flex;
+    width: 90%;
+    height: 300px;
+    border-radius: 30px;
+    padding:10px;
+    justify-content:center;
+    align-items:center;
+    background-color: rgb(70, 4, 4);
+    box-shadow: 5px 5px 5px black;
+}
+
+#tela{
+    width: 100%;
+    height: 260px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content:center;
+    align-items:center;
+    background-color: rgb(255, 255, 255);
+}
+
+#tela div input, #tela div input:focus, #tela div input::placeholder{
+    background-color: rgb(35, 93, 202);
+    width: 400px;
+    border-radius: 10px;
+    height: 30px;
+    user-select: none;
+    cursor: default;
+    padding:10px;
+    color:white;
+    text-align: left;
+    outline: none !important;
+}
+
+#tela div input::placeholder{
+    user-select: none;
+    cursor: default;
+    color:rgba(255, 255, 255, 0.336);
+    text-align: left;
+    outline: none !important;
+}
+
+#btns_vazios{
+    width: 100%;
+    height: 100px;
+    grid-template: repeat(6, 0fr) / repeat(6, 0fr);
+    display: grid;
+    gap: 10px;
+    justify-content:space-evenly;
+    align-items: center;
+}
+
+#btns_vazios div input, #btns_vazios div input:focus{
+    background-color: rgb(35, 93, 202);
+    width: 50px;
+    border-radius: 10px;
+    height: 50px;
+    user-select: none;
+    cursor: default;
+    border: 0;
+    color:white;
+    text-align: center;
+    outline: none !important;
+}
+
+#btns_vazios img{
+    background-color: rgb(88, 233, 44);
+    padding:5px;
+    width: 50px;
+    border-radius: 25px;
+    height: 50px;
+}
+
+.btns_vazios_2{
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+    align-items:flex-end;
+    gap: 10px;
+    height: 30px;
+}
+
+.btns_vazios_2 div{
+    width:90px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: rgb(97, 236, 236);
+}
+
+.caixa_btn{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+
+#spinner{
+    width: 100px;
+    height:100px;
+    border: 8px solid rgba(0, 0, 0, 0.1);
+    border-left-color: #ffffff;
+    border-radius: 50%;
+    animation: spin1 .4s linear infinite;
+}
+
+#spinner2{
+    width: 90px;
+    height:90px;
+    border: 8px solid rgba(0, 0, 0, 0.1);
+    border-left-color: #df1212;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin1 {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+
